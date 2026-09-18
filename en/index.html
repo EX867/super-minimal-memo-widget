@@ -13,31 +13,47 @@
   </head>
   <body>
     <h1>Super Minimal Memo Widget</h1>
-    <pre>Last updated: 2026-06-01</pre>
+    <pre>Last updated: 2026-09-19</pre>
     <br/>
     <h2>Privacy Policy</h2>
     <p>This privacy policy applies to the "Super Minimal Memo Widget" app for mobile devices (the "Application"), operated by Artsoft (or Salon de Composition) (the "Service Provider").</p>
     <br/>
-    <b>1. No Personal Information Collection</b>
-    <p>The Application is a 100% serverless, offline-based local utility. The Service Provider does not collect, store, share, or process any personal data, device identifiers, or usage analytics. All data created within the Application (such as memos and widget settings) is stored exclusively on the user's local device and is never transmitted to any external servers.</p>
+    <b>1. No Personal Information Collection by the Service Provider</b>
+    <p>The Application does not use any servers operated by the Service Provider. The Service Provider does not collect, store, share, or process any personal data, device identifiers, or usage analytics. All data created within the Application (such as memos and widget settings) is stored on the user's local device, in a local database built with the Android Room persistence library, and is not transmitted to the Service Provider or to any server operated by the Service Provider.</p>
     <br/>
-    <b>2. Third-Party Access & Tracking Technologies</b>
-    <p>
+    <b>2. Optional Google Drive Backup</b>
+    <p>The Application offers an optional feature that lets you back up and restore your memos and settings using your own Google Drive account. This feature is off by default and works only when you choose to use it.</p>
     <ul>
-      <li>No Third-Party SDKs: The Application does not integrate any third-party SDKs, analytics tools, or advertising networks.</li>
-      <li>No Cookies: The Application does not use cookies, pixels, or any tracking technologies.</li>
-      <li>Therefore, no data is shared with or transferred to any third parties or international entities.</li>
+      <li>Data involved: When you run a backup, your memos and widget settings are uploaded to the Application's hidden, app-specific storage area (the "app data folder") in your own Google Drive. This area does not appear in your regular Google Drive file list and cannot be accessed by other apps. When you run a restore, that backup file is downloaded from this area back to your device.</li>
+      <li>Your consent: The Application accesses Google Drive only after you sign in with your Google account and grant permission through Google's consent screen. You can revoke this permission at any time.</li>
+      <li>Direct transfer: Backup data is sent directly between your device and Google Drive. It never passes through, and is never stored on, any server operated by the Service Provider. The Service Provider cannot view, access, or recover your backup data.</li>
+      <li>Google account information: Sign-in and authorization are handled by Google. The Service Provider does not receive or store your Google account password, and does not collect your Google account information.</li>
+      <li>Purpose limitation: Data accessed through the Google Drive API is used only to provide the backup and restore feature you requested. It is not used for advertising, analytics, or any other purpose, and it is not sold, shared, or transferred to any third party.</li>
+      <li>Google API Services User Data Policy: The Application's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+      <li>Google's own policies: Once your data is stored in Google Drive, it is handled under Google's Terms of Service and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>, and the Service Provider is not responsible for how Google processes it.</li>
     </ul>
-    </p><br/>
-    <b>3. Data Storage and Deletion</b>
-    <p>Since all data is stored strictly on your local device, the Service Provider does not possess or retain any of your data. If you wish to delete your data, you can do so at any time by clearing the Application's cache/data through your device settings or by uninstalling the Application.</p>
     <br/>
-    <b>4. Children's Privacy</b>
-    <p>Because the Application does not collect any personal information whatsoever, it does not knowingly or unknowingly collect, request, or solicit any data from children under the age of 16 (or any other age).</p>
+    <b>3. Third-Party Access & Tracking Technologies</b>
+    <ul>
+      <li>No Analytics or Advertising: The Application does not integrate any third-party analytics tools or advertising networks.</li>
+      <li>Google Services: The only third-party service the Application uses is Google's authentication and Google Drive API, and only for the optional backup feature described above. If you never use the backup feature, the Application makes no such connection.</li>
+      <li>No Cookies: The Application does not use cookies, pixels, or any tracking technologies.</li>
+      <li>Apart from the Google Drive backup you initiate yourself, no data is shared with or transferred to any third parties.</li>
+    </ul>
     <br/>
-    <b>5. Changes to This Privacy Policy</b>
+    <b>4. Data Storage and Deletion</b>
+    <ul>
+      <li>Local data: Your memos and settings are stored on your device. You can delete them at any time by clearing the Application's storage through your device settings or by uninstalling the Application.</li>
+      <li>Google Drive backup: Backup files stored in your Google Drive are not deleted automatically when you uninstall the Application. The Application does not currently provide a function to delete backups. To delete your backup, open Google Drive on the web, go to Settings &gt; Manage apps, select this Application, and choose "Delete hidden app data". Because the Service Provider has no access to your backup, it cannot delete it on your behalf.</li>
+      <li>Revoking access: You can revoke the Application's access to your Google account at any time at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">https://myaccount.google.com/permissions</a>. Revoking access stops the Application from reading or writing your backup, but does not by itself delete the backup file; delete it as described above if you wish.</li>
+    </ul>
+    <br/>
+    <b>5. Children's Privacy</b>
+    <p>The Service Provider does not collect any personal information through the Application, and therefore does not knowingly or unknowingly collect, request, or solicit any data from children under the age of 16 (or any other age). The Google Drive backup feature requires a Google account, and use of that account is governed by Google's own age requirements.</p>
+    <br/>
+    <b>6. Changes to This Privacy Policy</b>
     <p>The Service Provider may update this Privacy Policy from time to time. Any changes will be effective immediately upon posting the updated policy with a new effective date on this page.</p>
-    <p>Effective Date: 2026-06-01</p>
+    <p>Effective Date: 2026-09-19</p>
     <br/>
     <b>Contact Us</b>
     <p>If you have any questions or feedback regarding privacy while using the Application, please contact the Service Provider via email at <a href="mailto:salon.de.composition@gmail.com">salon.de.composition@gmail.com</a>.</p>
@@ -47,22 +63,24 @@
     <p>By downloading or using the Application, you agree to these Terms and Conditions.</p>
     <br/>
     <b>1. Description of Service</b>
-    <p>The Application is a 100% serverless, offline-based local utility developed using Android native technologies and SQLite. Its sole functionality is to allow users to write, manage, and display memos via app and home screen widgets. The Application does not require an internet connection, does not utilize any central servers, and does not support any user-to-user content sharing or cloud synchronization.</p>
+    <p>The Application is a local utility developed using Android native technologies and the Room persistence library. Its main functionality is to allow users to write, manage, and display memos via app and home screen widgets. Memos and widget settings are stored on your device and the Application works without an internet connection. The Application does not utilize any servers operated by the Service Provider and does not support any user-to-user content sharing.</p>
+    <p>As an optional feature, the Application can back up and restore your memos and settings using your own Google Drive account. This feature requires an internet connection and a Google account, and is used only when you choose to.</p>
     <br/>
     <b>2. Data Management and Limitation of Liability</b>
-    <p>
     <ul>
-      <li>User's Responsibility: Since all memos and widget settings are stored exclusively within the local SQLite database of your own mobile device, the total responsibility for data backup, retention, and management rests entirely with the user.</li>
-      <li>No Server Backups: The Service Provider has no access to your data and cannot recover any lost information.</li>
-      <li>Limitation of Liability: To the fullest extent permitted by applicable law, the Service Provider shall not be liable for any direct, indirect, incidental, or consequential damages, including but not limited to loss of data, memo corruption, or widget malfunctions resulting from device failure, OS updates, app deletion, battery depletion, or unexpected software errors. The Application is provided on an "AS IS" and "AS AVAILABLE" basis.</li>
+      <li>User's Responsibility: Your memos and widget settings are stored in the local database of your own mobile device. Responsibility for data backup, retention, and management rests with the user. The Google Drive backup feature is provided as a convenience and does not relieve you of this responsibility.</li>
+      <li>No Server Backups: The Service Provider does not operate any backup server, has no access to your data or to your Google Drive backups, and cannot recover any lost information.</li>
+      <li>Backup and Restore: Restoring a backup overwrites the memos and settings currently on your device with the backup contents, and the overwritten data cannot be recovered. Please consider whether you need to keep your current data before restoring. Backup and restore may fail or be incomplete because of network conditions, insufficient Google Drive storage, Google account or permission changes, or changes to Google's services. You are encouraged to verify that your backup has completed successfully.</li>
+      <li>Third-Party Services: Google Drive and Google sign-in are provided by Google, not by the Service Provider. Your use of them is subject to Google's terms and policies, and the Service Provider is not responsible for their availability, changes, or discontinuation, or for any loss or exposure of data stored in your Google account.</li>
+      <li>Limitation of Liability: To the fullest extent permitted by applicable law, the Service Provider shall not be liable for any direct, indirect, incidental, or consequential damages, including but not limited to loss of data, memo corruption, failed or corrupted backups or restores, or widget malfunctions resulting from device failure, OS updates, app deletion, battery depletion, third-party service issues, or unexpected software errors. The Application is provided on an "AS IS" and "AS AVAILABLE" basis.</li>
     </ul>
-    </p><br/>
+    <br/>
     <b>3. Intellectual Property & License</b>
     <p>The Service Provider retains all intellectual property rights in the Application, including its source code, design, and branding. You are granted a limited, non-exclusive, non-transferable license to use the Application for personal purposes. You may not reverse engineer, decompile, or attempt to extract the source code of the Application.</p>
     <br/>
     <b>4. Changes and Termination of Service</b>
-    <p>The Application is provided 100% free of charge. The Service Provider reserves the right to modify, update, or discontinue the Application (or any part thereof) at any time, for any reason, and without prior notice. You are advised to accept updates when offered to ensure proper functionality on newer versions of the Android operating system.</p>
-    <p>Effective Date: 2026-06-01</p>
+    <p>The Application is provided free of charge. The Service Provider reserves the right to modify, update, or discontinue the Application (or any part thereof, including the Google Drive backup feature) at any time, for any reason, and without prior notice. You are advised to accept updates when offered to ensure proper functionality on newer versions of the Android operating system.</p>
+    <p>Effective Date: 2026-09-19</p>
     <br/>
     <b>Contact Us</b>
     <p>If you have any questions or suggestions about these Terms and Conditions, please contact the Service Provider via email at <a href="mailto:salon.de.composition@gmail.com">salon.de.composition@gmail.com</a>.</p>
